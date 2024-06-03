@@ -1,0 +1,27 @@
+@COURSE_ID = 65f8ce7a8766c97cd8684d4c
+POST http://localhost:4000/courses
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4ZDA2MTg3NjZjOTdjZDg2ODRkNjEiLCJmdWxsbmFtZSI6eyJmaXJzdCI6IkdlbGlsbGEiLCJsYXN0IjoiVGFmYSJ9LCJlbWFpbCI6Imd0YXRhQG1pdS5lZHUiLCJwcm9maWxlUGljUGF0aCI6ImltYWdlcy9ndWVzdC5wbmciLCJpYXQiOjE3MTA4MDUxMDh9.reoyIjqJUx_OpuKQcW3NttqkGuIV4YhGuYxf0JwrL-w
+Content-Type: application/json
+
+{
+    "title":"SD600",
+    "description":"React Programming"
+}
+###
+GET http://localhost:4000/courses?action=own
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YzdiNzNmNThlNDJiNTE3ZWMwOGMiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJwcm9maWxlUGljUGF0aCI6InVwbG9hZC9iZjQ3NTk2NmE4ZjMzMzQ0MGFkODZiNjA2ZTZiM2Q3MCIsImlhdCI6MTcxMDgxMDIwMH0.yPWN_ZXPaYn8VF4EDNIkCf38OR40VCAzidfvTp8M6oc
+###
+GET http://localhost:4000/courses/{{COURSE_ID}} 
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
+###
+DELETE http://localhost:4000/courses/{{COURSE_ID}}
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
+###
+PUT http://localhost:4000/courses/{{COURSE_ID}}
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
+Content-Type: application/json
+
+{
+    "title":"SD500",
+    "description":"Asynchronous Programming"
+}

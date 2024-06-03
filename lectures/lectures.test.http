@@ -1,0 +1,30 @@
+@COURSE_ID = 65f8ce7a8766c97cd8684d4c
+@LECTURE_ID = 65f8d8815cf4b25c06abd86f
+
+
+POST http://localhost:4000/courses/{{COURSE_ID}}/lectures
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
+Content-Type: application/json
+
+{
+    "title": "This is the lecture title",
+    "description": "This is the lecture description",
+    "url": "www.lecture.url"
+}
+
+###
+GET http://localhost:4000/courses/{{COURSE_ID}}/lectures
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
+###
+PUT http://localhost:4000/courses/{{COURSE_ID}}/lectures/{{LECTURE_ID}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
+Content-Type: application/json
+
+{
+    "title": "This is the updated lecture title",
+    "description": "This is the updated lecture description",
+    "url": "www.updated/lecture.url"
+}
+###
+DELETE http://localhost:4000/courses/{{COURSE_ID}}/lectures/{{LECTURE_ID}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3NTVlOTRhYTk5NzlhYTg1N2E0N2EiLCJmdWxsbmFtZSI6eyJmaXJzdCI6Ik5hdG5hZWwiLCJsYXN0IjoiTGVtYSJ9LCJlbWFpbCI6Im5sZW1hQG1pdS5lZHUiLCJpYXQiOjE3MTA3MDk3NTB9.KYTB5UlCzddxQeikXzPR7pGPoUx9ZE7B8FGBLuB4RT4
